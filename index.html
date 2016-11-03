@@ -28,6 +28,12 @@
         justify-content: center;
         align-items: center;
       }
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
       .names {
         display: flex;
         justify-content: center;
@@ -39,10 +45,10 @@
         justify-content: center;
         align-items: baseline;
       }
-      .title h1 a {
+      .link {
         text-decoration: none;
       }
-      .huemul:hover {
+      .link:hover {
         color: #D74E69;
       }
       .name {
@@ -63,9 +69,6 @@
   <body>
     <main>
       <div class="content">
-        <div class="title">
-          <h1><a class="huemul" href="https://github.com/Huemul/" target="_blank" rel="noopener">Huemul</a>,&nbsp;<h2><i>hard-coding</i><h2></h1>
-        </div>
         <div class="names">
           <a class="name" href="https://github.com/delvallejoni/" target="_blank" rel="noopener">Joni</a>
           <a class="name" href="https://github.com/gillchristian/" target="_blank" rel="noopener">Christian</a>
@@ -73,6 +76,10 @@
           <a class="name" href="https://github.com/matiastucci/" target="_blank" rel="noopener">Mati</a>
           <a class="name" href="https://github.com/ndelvalle/" target="_blank" rel="noopener">Nico</a>
         </div>
+        <div class="title">
+          <h1><a class="link" href="https://github.com/Huemul/" target="_blank" rel="noopener">Huemul</a>,&nbsp;<h2><i>hard-coding</i><h2></h1>
+        </div>
+        <h2><a class="link" href="https://github.com/Huemul/trae" target="_blank" rel="noopener">trae</a> #soon</h2>
       </div>
     </div>
   </body>
