@@ -28,7 +28,7 @@
         justify-content: center;
         align-items: center;
       }
-      .content {
+      .content, .projects {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -40,7 +40,7 @@
         align-items: center;
         flex-wrap: wrap;
       }
-      .title {
+      .org-title {
         display: flex;
         justify-content: center;
         align-items: baseline;
@@ -64,22 +64,33 @@
       .name:hover {
         color: #333;
       }
+      .projects .header {
+        margin-bottom: 10px;
+        color: #D74E69;
+      }
+      .projects .project {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
     <main>
       <div class="content">
         <div class="names">
-          <a class="name" href="https://github.com/delvallejoni/" target="_blank" rel="noopener">Joni</a>
+          <a class="name" href="https://github.com/delvallejonatan/" target="_blank" rel="noopener">Joni</a>
           <a class="name" href="https://github.com/gillchristian/" target="_blank" rel="noopener">Christian</a>
           <a class="name" href="https://github.com/martincarrera/" target="_blank" rel="noopener">Martin</a>
           <a class="name" href="https://github.com/matiastucci/" target="_blank" rel="noopener">Mati</a>
           <a class="name" href="https://github.com/ndelvalle/" target="_blank" rel="noopener">Nico</a>
         </div>
-        <div class="title">
+        <div class="org-title">
           <h1><a class="link" href="https://github.com/Huemul/" target="_blank" rel="noopener">Huemul</a>,&nbsp;<h2><i>hard-coding</i><h2></h1>
         </div>
-        <h2><a class="link" href="https://github.com/Huemul/trae" target="_blank" rel="noopener">trae</a> #soon</h2>
+        <div class="projects">
+          <h2 class="header">Projects</h2>
+          <h2 class="project"><a class="link" href="https://huemul.github.io/trae" target="_blank" rel="noopener">trae</a></h2>
+        </div>
       </div>
     </div>
   </body>
