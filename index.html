@@ -17,6 +17,10 @@
         background-repeat: no-repeat;
         position: relative;
         font-family: monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       a {
         font-size: 0.8em;
@@ -30,32 +34,19 @@
       a:hover {
         color: #333;
       }
-      .logo-container {
-        position: absolute;
-        left: 50%;
-        top: 38%;
-        transform: translate(-50%, -38%);
-        width: 100%;
-        height: 100%;
-        max-width: 500px;
-        max-height: 500px;
-      }
-      .logo-container .logo {
+      .logo {
         background-image: url('assets/logo.png');
         background-position: center;
-        background-size: 90%;
+        background-size: 100%;
         background-repeat: no-repeat;
+        max-width: 290px;
+        max-height: 370px;
         width: 100%;
         height: 100%;
         position: relative;
       }
-      .logo-container .title {
-        position: absolute;
-        top: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
-        margin: 0 0 20px 0;
+      .title {
+        margin: 0;
         font-weight: 100;
         font-size: 42px;
         letter-spacing: 5px;
@@ -64,11 +55,9 @@
     </style>
   </head>
   <body>
-    <div class="logo-container">
-      <div class="logo"></div>
-      <h1 class="title">
-        <a href="https://github.com/Huemul">Huemul</a>
-      </h1>
-    </div>
+    <div class="logo"></div>
+    <h1 class="title">
+      <a href="https://github.com/Huemul">Huemul</a>
+    </h1>
   </body>
 </html>
