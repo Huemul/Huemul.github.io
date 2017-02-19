@@ -7,91 +7,92 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
+      html {
+        background-image: url('assets/bg.png');
+        background-position: center;
+        background-size: 115%;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
       body {
-        font-family: "Courier New", monospace;
-        color: #555;
+        color: white;
         margin: 0;
         height: 100vh;
         padding: 0;
-        background-color: #FDE9C5;
       }
+
       a:visited,
       a:link,
       a:hover {
         color: inherit;
         text-decoration: none;
       }
-      main {
+
+      .logo-container {
+        position: absolute;
+        left: 50%;
+        top: 38%;
+        transform: translate(-50%, -38%);
+        width: 500px;
+        height: 500px;
+      }
+
+      .logo-container .logo {
+        background-image: url('assets/logo.png');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
         width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 100%;
+        position: relative;
       }
-      .content, .projects {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+
+      .logo-container .title {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        margin: 0 0 20px 0;
+        font-weight: 100;
+        font-size: 42px;
+        letter-spacing: 5px;
+        text-align: center;
       }
+
       .names {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        position: absolute;
+        font-weight: 100;
+        font-size: 25px;
+        letter-spacing: 5px;
+        text-align: center;
       }
-      .org-title {
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
+
+      .names .name {
+        margin: 0 5px;
       }
-      .link {
-        text-decoration: none;
-      }
-      .link:hover {
-        color: #D74E69;
-      }
-      .name {
-        padding: 10px;
-        color: #D74E69;
-        text-decoration: none;
-        cursor: pointer;
-      }
-      .name:link,
-      .name:visited {
-        color: #D74E69;
-      }
-      .name:hover {
-        color: #333;
-      }
-      .projects .header {
-        margin-bottom: 10px;
-        color: #D74E69;
-      }
-      .projects .project {
-        margin-top: 10px;
-        margin-bottom: 10px;
+
+      .names .name:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <main>
-      <div class="content">
-        <div class="names">
-          <a class="name" href="https://github.com/delvallejonatan/" target="_blank" rel="noopener">Joni</a>
-          <a class="name" href="https://github.com/gillchristian/" target="_blank" rel="noopener">Christian</a>
-          <a class="name" href="https://github.com/martincarrera/" target="_blank" rel="noopener">Martin</a>
-          <a class="name" href="https://github.com/matiastucci/" target="_blank" rel="noopener">Mati</a>
-          <a class="name" href="https://github.com/ndelvalle/" target="_blank" rel="noopener">Nico</a>
-        </div>
-        <div class="org-title">
-          <h1><a class="link" href="https://github.com/Huemul/" target="_blank" rel="noopener">Huemul</a>,&nbsp;<h2><i>hard-coding</i><h2></h1>
-        </div>
-        <div class="projects">
-          <h2 class="header">Projects</h2>
-          <h2 class="project"><a class="link" href="https://huemul.github.io/trae" target="_blank" rel="noopener">trae</a></h2>
-        </div>
-      </div>
+    <div class="logo-container">
+      <div class="logo"></div>
+      <h1 class="title">Huemul Coding</h1>
+    </div>
+    <div class="names">
+      <a class="name" href="https://github.com/delvallejonatan/" target="_blank" rel="noopener">Joni</a>
+      <a class="name" href="https://github.com/gillchristian/" target="_blank" rel="noopener">Christian</a>
+      <a class="name" href="https://github.com/martincarrera/" target="_blank" rel="noopener">Martin</a>
+      <a class="name" href="https://github.com/matiastucci/" target="_blank" rel="noopener">Mati</a>
+      <a class="name" href="https://github.com/ndelvalle/" target="_blank" rel="noopener">Nico</a>
     </div>
   </body>
 </html>
